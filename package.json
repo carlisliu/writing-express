@@ -1,0 +1,22 @@
+{
+  "name": "writing-express",
+  "version": "1.0.0",
+  "description": "writing express from scratch",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/carlisliu/writing-express.git"
+  },
+  "keywords": [
+    "express"
+  ],
+  "author": "Carlis Liu",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/carlisliu/writing-express/issues"
+  },
+  "homepage": "https://github.com/carlisliu/writing-express#readme"
+}
