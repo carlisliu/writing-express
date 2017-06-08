@@ -27,14 +27,16 @@ var express = function() {
 
         // do logic process.
 
-        //finished, response to client request.
+        // finished, response to client request.
         next();
     }
     return app;
 };
 
 const http = require('http');
+// Declare express as a function, and return a function which accept two parameters as a listener for `http.createServer`
 const app = express();
+// Pass the listener function to `http.createServer`.
 const server = http.createServer(app);
 server.listen(3000, () => {
     console.log('server running.');
