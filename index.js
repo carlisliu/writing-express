@@ -25,9 +25,9 @@ var express = function() {
             res.end('Hello World\n');
         };
 
-        // do something.
+        // do logic process.
 
-        //finished.
+        //finished, response to client request.
         next();
     }
     return app;
