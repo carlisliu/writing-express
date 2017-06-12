@@ -41,3 +41,7 @@ const server = http.createServer(app);
 server.listen(3000, () => {
     console.log('server running.');
 });
+
+/*
+Obviously, express function is the point here. Let's focus on it.
+*/
