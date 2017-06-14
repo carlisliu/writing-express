@@ -30,6 +30,12 @@ var express = function() {
         // finished, response to client request.
         next();
     }
+
+    extend(app);
+
+    // initialization
+    app.init();
+
     return app;
 };
 
@@ -45,3 +51,11 @@ server.listen(3000, () => {
 /*
 Obviously, express function is the point here. Let's focus on it.
 */
+
+function extend(app) {
+    app.init = function() {
+        this.cache = {};
+        this.engines = {};
+        this.settings = {};
+    };
+}
