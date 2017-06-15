@@ -58,4 +58,14 @@ function extend(app) {
         this.engines = {};
         this.settings = {};
     };
+
+    app.set = function(key, value) {
+        if (arguments.length === 1) {
+            return this.settings[key];
+        }
+
+        this.settings[key] = value;
+        
+        return this;
+    };
 }
