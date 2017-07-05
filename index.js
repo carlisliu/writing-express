@@ -68,4 +68,7 @@ function extend(app) {
         
         return this;
     };
+    
+    app.get = function(key) {
+    };
 }
